@@ -18,4 +18,6 @@ jobs:
         run: pip install pytest
 
       - name: Run tests
-        run: python -m pytest
+        env:
+          PYTHONPATH: .
+        run: pytest
